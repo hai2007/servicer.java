@@ -20,6 +20,12 @@ java io.gitee.hai2007.servicer.Test
 mvn test
 ```
 
+## How to publish?
+
+```
+mvn clean deploy -e
+```
+
 开源协议
 ---------------------------------------
 [MIT](https://github.com/hai2007/io.gitee.hai2007.servicer/blob/master/LICENSE)

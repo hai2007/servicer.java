@@ -8,6 +8,10 @@
     <artifactId>servicer</artifactId>
     <version>1.0.0</version>
 
+    <name>servicer</name>
+    <url>https://github.com/hai2007/io.gitee.hai2007.servicer</url>
+    <description>In order to better and quickly build a customized and personalized socket server, support custom HTTP protocol rules, etc</description>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -94,21 +98,21 @@
             <url>https://github.com/hai2007/io.gitee.hai2007.servicer/blob/master/LICENSE</url>
             <distribution>actable</distribution>
         </license>
-        </licenses>
+    </licenses>
 
-        <developers>
+    <developers>
         <developer>
             <name>hai2007</name>
             <email>2501482523@qq.com</email>
             <organization>io.gitee.hai2007</organization>
         </developer>
-        </developers>
+    </developers>
 
-        <scm>
+    <scm>
         <tag>master</tag>
         <url>git@github.com:hai2007/io.gitee.hai2007.servicer.git</url>
         <connection>git@github.com:hai2007/io.gitee.hai2007.servicer.git</connection>
         <developerConnection>git@github.com:hai2007/io.gitee.hai2007.servicer.git</developerConnection>
-        </scm>
+    </scm>
 
 </project>
