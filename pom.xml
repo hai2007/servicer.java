@@ -9,7 +9,7 @@
     <version>1.0.0</version>
 
     <name>servicer</name>
-    <url>https://github.com/hai2007/io.gitee.hai2007.servicer</url>
+    <url>https://github.com/hai2007/servicer.java</url>
     <description>In order to better and quickly build a customized and personalized socket server, support custom HTTP protocol rules, etc</description>
 
     <properties>
@@ -95,7 +95,7 @@
     <licenses>
         <license>
             <name>MIT</name>
-            <url>https://github.com/hai2007/io.gitee.hai2007.servicer/blob/master/LICENSE</url>
+            <url>https://github.com/hai2007/Server.java/blob/master/LICENSE</url>
             <distribution>actable</distribution>
         </license>
     </licenses>
@@ -110,9 +110,9 @@
 
     <scm>
         <tag>master</tag>
-        <url>git@github.com:hai2007/io.gitee.hai2007.servicer.git</url>
-        <connection>git@github.com:hai2007/io.gitee.hai2007.servicer.git</connection>
-        <developerConnection>git@github.com:hai2007/io.gitee.hai2007.servicer.git</developerConnection>
+        <url>git@github.com:hai2007/servicer.java.git</url>
+        <connection>git@github.com:hai2007/servicer.java.git</connection>
+        <developerConnection>git@github.com:hai2007/servicer.java.git</developerConnection>
     </scm>
 
 </project>
