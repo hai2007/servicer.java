@@ -18,8 +18,10 @@ public class Servicer {
 
 	public void run(Handler handler) throws IOException {
 
-		System.out.println("-----------启动服务器-----------");
-
+		System.out.println("-----------StartUp-----------");
+		System.out.println("http://127.0.0.1:" + this.port);
+		System.out.println("\n");
+		
 		ServerSocket server = null;
 		String lineSeparator = System.getProperty("line.separator", "\n");
 

@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.gitee.hai2007.servicer</groupId>
     <artifactId>servicer</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>servicer</name>
     <url>https://github.com/hai2007/servicer.java</url>
@@ -23,15 +23,6 @@
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
-    <dependencies>
-        <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>3.8.1</version>
-        <scope>test</scope>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>

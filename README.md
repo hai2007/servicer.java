@@ -5,28 +5,65 @@
 
 ## How to test?
 
-首先，需要进行打包：
+打开```eclipse```后，按照下面顺序导入下面：
 
 ```
-mvn clean package
+[File] -> [Import] -> [Maven] -> [Existing Maven Projects]
 ```
 
-然后，命令行进入```target/classes```后执行：
+然后选择当前项目即可成功导入。
 
-```
-java io.gitee.hai2007.servicer.Test
-```
-
-而对于普通测试，直接在```src/test```下新增测试用例后，执行：
-
-```
-mvn test
-```
+导入后运行只需要把```Test.java```作为入口，选择```run as Application```即可。
 
 ## How to publish?
 
 ```
 mvn clean deploy -e
+```
+
+## How to Use?
+
+- 下面我们将说明服务器如何使用（如果后续添加了工具类等内容将会在别的地方说明）。
+
+首先，你需要在Maven的项目中配置文件```pom.xml```里添加下面依赖：
+```
+<dependencies>
+    <dependency>
+        <groupId>io.gitee.hai2007.servicer</groupId>
+        <artifactId>servicer</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+</dependencies>
+```
+
+> 上面版本以```1.0.1```为例子，具体使用换成具体版本即可。
+
+然后，在需要的地方引入服务器包：
+
+```
+import io.gitee.hai2007.servicer.Servicer;
+```
+
+使用的时候非常简单：
+
+```java
+// 启动服务器并传递请求处理实例
+new Servicer(9999).run(new Handler());
+```
+
+上面的Handler是一个类，需要这样实现：
+
+```java
+public class Handler implements io.gitee.hai2007.servicer.Handler {
+
+	// 处理请求
+	public String doResolve(String request) {
+
+        // request表示请求端携带的数据
+		return <给请求端响应的内容>;
+	}
+
+}
 ```
 
 开源协议
