@@ -18,7 +18,7 @@ __etcpack__scope_args__=window.__etcpack__getBundle('46');
 
     script.render=function(createElement){
 
-        return createElement('div',{"class":"doc-view","quickpaper":"","data-quickpaper-4669f6e6":""},[createElement('header',{"id":"fixed-top","data-quickpaper-4669f6e6":""},["io.gitee.hai2007.http.Respond"])])
+        return createElement('div',{"class":"doc-view","quickpaper":"","data-quickpaper-4669f6e6":""},[createElement('header',{"id":"fixed-top","data-quickpaper-4669f6e6":""},["io.gitee.hai2007.http.Respond"]),createElement('h2',{"id":"fixed-construct","data-quickpaper-4669f6e6":""},["构造器"]),createElement('h3',{"id":"fixed-construct1","data-quickpaper-4669f6e6":""},["Respond()"]),createElement('h2',{"id":"fixed-object-method","data-quickpaper-4669f6e6":""},["对象方法"]),createElement('h3',{"id":"fixed-object-method1","data-quickpaper-4669f6e6":""},["void setHeader(String key, String value)"]),createElement('p',{"data-quickpaper-4669f6e6":""},["用于设置响应头。"]),createElement('h3',{"id":"fixed-object-method2","data-quickpaper-4669f6e6":""},["String getValue(String content)"]),createElement('p',{"data-quickpaper-4669f6e6":""},["其中content表示响应的实体内容，返回拼接好的响应字符串，也就是",createElement('a',{"class":"link","href":"#/api/io.gitee.hai2007.servicer.Handler?fixed=object-method-1","target":"_blank","data-quickpaper-4669f6e6":""},["String↵            doResolve(String request)"]),"方法需要返回的内容。"])])
 
     };
 

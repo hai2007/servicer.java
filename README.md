@@ -29,20 +29,18 @@ mvn clean deploy -e
 
 ## How to Use?
 
-- 下面我们将说明服务器如何使用（如果后续添加了工具类等内容将会在别的地方说明）。
-
 首先，你需要在Maven的项目中配置文件```pom.xml```里添加下面依赖：
 ```
 <dependencies>
     <dependency>
         <groupId>io.gitee.hai2007.servicer</groupId>
         <artifactId>servicer</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
     </dependency>
 </dependencies>
 ```
 
-> 上面版本以```1.0.1```为例子，具体使用换成具体版本即可。
+> 上面版本以```1.1.0```为例子，具体使用换成具体版本即可。
 
 然后，在需要的地方引入服务器包：
 
@@ -71,6 +69,8 @@ public class Handler implements io.gitee.hai2007.servicer.Handler {
 
 }
 ```
+
+更多说明你可以[点击此处](https://hai2007.github.io/servicer.java/#/api/)进行查看！
 
 开源协议
 ---------------------------------------

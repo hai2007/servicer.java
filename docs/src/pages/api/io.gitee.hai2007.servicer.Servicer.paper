@@ -2,5 +2,27 @@
     <header id='fixed-top'>
         io.gitee.hai2007.servicer.Servicer
     </header>
-   
+    <p>
+        这是一个普通类，用于快速开发一个服务器。
+    </p>
+    <h2 id='fixed-construct'>
+        构造器
+    </h2>
+    <h3 id='fixed-construct1'>
+        Servicer(int port)
+    </h3>
+    <p>
+        port表示端口号。
+    </p>
+    <h2 id='fixed-object-method'>
+        对象方法
+    </h2>
+    <h3 id='fixed-object-method1'>
+        void run(Handler handler)
+    </h3>
+    <p>
+        调用此方法并传递一个
+        <a href="#/api/io.gitee.hai2007.servicer.Handler?fixed=top" target="_blank" class="link">Handler</a>
+        实例就可以正式启动服务器。
+    </p>
 </template>

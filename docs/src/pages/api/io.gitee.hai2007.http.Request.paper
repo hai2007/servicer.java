@@ -2,5 +2,31 @@
     <header id='fixed-top'>
         io.gitee.hai2007.http.Request
     </header>
-   
+    <h2 id='fixed-construct'>
+        构造器
+    </h2>
+    <h3 id='fixed-construct1'>
+        Request(String code)
+    </h3>
+    <p>
+        其中code就是
+        <a class="link" href="#/api/io.gitee.hai2007.servicer.Handler?fixed=object-method-1" target="_blank">String
+            doResolve(String request)</a>
+        的参数request。
+    </p>
+    <h2 id='fixed-object-method'>
+        对象方法
+    </h2>
+    <h3 id='fixed-object-method1'>
+        String getHeader(String keyName)
+    </h3>
+    <p>
+        传递一个请求头名称，返回对应的内容。
+    </p>
+    <h3 id='fixed-object-method2'>
+        String getData()
+    </h3>
+    <p>
+        获取请求携带的数据。
+    </p>
 </template>

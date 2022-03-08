@@ -2,5 +2,28 @@
     <header id='fixed-top'>
         io.gitee.hai2007.http.Respond
     </header>
-   
+    <h2 id='fixed-construct'>
+        构造器
+    </h2>
+    <h3 id='fixed-construct1'>
+        Respond()
+    </h3>
+    <h2 id='fixed-object-method'>
+        对象方法
+    </h2>
+    <h3 id='fixed-object-method1'>
+        void setHeader(String key, String value)
+    </h3>
+    <p>
+        用于设置响应头。
+    </p>
+    <h3 id='fixed-object-method2'>
+        String getValue(String content)
+    </h3>
+    <p>
+        其中content表示响应的实体内容，返回拼接好的响应字符串，也就是
+        <a class="link" href="#/api/io.gitee.hai2007.servicer.Handler?fixed=object-method-1" target="_blank">String
+            doResolve(String request)</a>
+        方法需要返回的内容。
+    </p>
 </template>

@@ -2,3 +2,11 @@ v1.0.1:
     date:2022-03-04
     changes:
       -  初始化版本
+v1.1.0:
+    date:2022-03-08
+    changes:
+      -  新增用于解析HTTP请求头和拼接响应内容的两个类
+        （
+          io.gitee.hai2007.http.Request
+          io.gitee.hai2007.http.Respond
+        ）
