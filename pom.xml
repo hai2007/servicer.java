@@ -9,7 +9,7 @@
     <version>1.0.1</version>
 
     <name>servicer</name>
-    <url>https://github.com/hai2007/servicer.java</url>
+    <url>https://hai2007.github.io/servicer.java/</url>
     <description>In order to better and quickly build a customized and personalized socket server, support custom HTTP protocol rules, etc</description>
 
     <properties>
