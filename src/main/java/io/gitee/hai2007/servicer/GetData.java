@@ -17,7 +17,6 @@ public class GetData implements Runnable {
 		this.infoStr = "";
 
 		int len = -1;
-		System.out.println("0" + this.infoStr);
 		try {
 			while ((len = this.reader.read()) != -1) {
 				this.infoStr += String.valueOf(((char) len));

@@ -11,12 +11,12 @@
     <dependency>
         <groupId>io.gitee.hai2007.servicer</groupId>
         <artifactId>servicer</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
     </dependency>
 </dependencies>
     </pre>
         <p class="warn">
-            上面版本以1.4.0为例子，具体使用换成具体版本即可。
+            上面版本以1.5.0为例子，具体使用换成具体版本即可。
         </p>
         <header>
             使用
