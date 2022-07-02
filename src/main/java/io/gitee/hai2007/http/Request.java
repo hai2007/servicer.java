@@ -6,12 +6,13 @@ public class Request {
 
 	HashMap<String, String> headerMap = new HashMap<String, String>();
 	String data = "";
+	String lineSeparator = System.getProperty("line.separator", "\n");
 
 	public Request(String code) {
 
-		String[] codeArray = (code.trim() + "\n\n ").split("\n\n");
+		String[] codeArray = (code.trim() + lineSeparator + lineSeparator).split(lineSeparator + lineSeparator);
 
-		String[] headerArray = codeArray[0].trim().split("\n");
+		String[] headerArray = codeArray[0].trim().split(lineSeparator);
 		for (int index = 1; index < headerArray.length; index++) {
 			String[] item = headerArray[index].split(": ");
 			headerMap.put(item[0].trim(), item[1].trim());
@@ -21,15 +22,15 @@ public class Request {
 	}
 
 	public String toString() {
-		String codeStr = "{\n";
+		String codeStr = "{" + lineSeparator;
 		codeStr += "    header:{";
 
 		for (String key : headerMap.keySet()) {
-			codeStr += "\n        " + key + " : " + headerMap.get(key);
+			codeStr += lineSeparator + "        " + key + " : " + headerMap.get(key);
 		}
-		codeStr += "\n    },\n";
+		codeStr += lineSeparator + "    }," + lineSeparator;
 		codeStr += "    data:" + data;
-		return codeStr + "\n}";
+		return codeStr + lineSeparator + "}";
 	}
 
 	public String getHeader(String keyName) {

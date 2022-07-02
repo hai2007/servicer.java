@@ -6,8 +6,8 @@ class MyHandler implements Handler {
 
 	// 处理请求
 	public String doResolve(String request) {
-		
-		System.out.println("[请求内容]"+request);
+
+		System.out.println("[请求内容]" + request);
 
 		String lineSeparator = System.getProperty("line.separator", "\n");
 
@@ -19,7 +19,7 @@ class MyHandler implements Handler {
 }
 
 public class Test {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 
 		// 启动服务器并传递请求处理实例
 		new Servicer(9999).run(new MyHandler());
