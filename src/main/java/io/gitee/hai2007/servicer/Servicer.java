@@ -1,11 +1,7 @@
 package io.gitee.hai2007.servicer;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
-import java.net.Socket;
 
 public class Servicer {
 
@@ -29,27 +25,8 @@ public class Servicer {
 			server = new ServerSocket(this.port);
 
 			while (true) {
-				Socket socket = server.accept();
-
-				InputStreamReader reader = new InputStreamReader(socket.getInputStream());
-				GetData getData = new GetData(reader);
-
-				Thread thread = new Thread(getData);
+				Thread thread = new Thread(new Respond(handler, server.accept()));
 				thread.start();
-
-				Thread.sleep(100);
-				String infoStr = getData.valueOf();
-
-				// 处理服务器请求并返回处理结果
-				String result = handler.doResolve(infoStr);
-
-				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-				writer.write(result);
-				writer.flush();
-
-				socket.shutdownInput();
-				socket.shutdownOutput();
-				socket.close();
 
 			}
 
