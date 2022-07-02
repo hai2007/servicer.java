@@ -10,7 +10,7 @@ v1.1.0:
           io.gitee.hai2007.http.Request
           io.gitee.hai2007.http.Respond
         ）
-v1.2.0:
+v1.3.0:
     date:2022-07-02
     changes:
       -  修改请求内容读取方法，提高兼容更多情况

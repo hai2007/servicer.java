@@ -35,12 +35,12 @@ mvn clean deploy -e
     <dependency>
         <groupId>io.gitee.hai2007.servicer</groupId>
         <artifactId>servicer</artifactId>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
     </dependency>
 </dependencies>
 ```
 
-> 上面版本以```1.2.0```为例子，具体使用换成具体版本即可。
+> 上面版本以```1.3.0```为例子，具体使用换成具体版本即可。
 
 然后，在需要的地方引入服务器包：
 

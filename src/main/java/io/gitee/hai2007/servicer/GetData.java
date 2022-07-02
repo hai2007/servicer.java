@@ -20,7 +20,6 @@ public class GetData implements Runnable {
 		System.out.println("0" + this.infoStr);
 		try {
 			while ((len = this.reader.read()) != -1) {
-				System.out.println("1" + this.infoStr);
 				this.infoStr += String.valueOf(((char) len));
 			}
 		} catch (Exception e) {
@@ -34,8 +33,6 @@ public class GetData implements Runnable {
 	}
 
 	public String valueOf() {
-		System.out.println("2" + this.infoStr);
-
 		return this.infoStr;
 	}
 
