@@ -14,7 +14,7 @@ public class Request {
 
 		String[] headerArray = new String[0];
 		if (codeArray.length > 0) {
-			codeArray[0].trim().split(lineSeparator);
+			headerArray = codeArray[0].trim().split(lineSeparator);
 		}
 		for (int index = 1; index < headerArray.length; index++) {
 			String[] item = headerArray[index].split(": ");

@@ -2,12 +2,16 @@ package io.gitee.hai2007.servicer;
 
 import java.io.IOException;
 
+import io.gitee.hai2007.http.Request;
+
 class MyHandler implements Handler {
 
 	// 处理请求
 	public String doResolve(String request) {
 
 		System.out.println("[请求内容]" + request);
+		
+		System.out.println(new Request(request));
 
 		String lineSeparator = System.getProperty("line.separator", "\n");
 
