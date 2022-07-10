@@ -12,12 +12,19 @@ public class Request {
 
 		String[] codeArray = (code.trim() + lineSeparator + lineSeparator).split(lineSeparator + lineSeparator);
 
-		String[] headerArray = codeArray[0].trim().split(lineSeparator);
+		String[] headerArray = new String[0];
+		if (codeArray.length > 0) {
+			codeArray[0].trim().split(lineSeparator);
+		}
 		for (int index = 1; index < headerArray.length; index++) {
 			String[] item = headerArray[index].split(": ");
 			headerMap.put(item[0].trim(), item[1].trim());
 		}
-		data = codeArray[1];
+		if (codeArray.length > 1) {
+			data = codeArray[1];
+		} else {
+			data = "";
+		}
 
 	}
 
